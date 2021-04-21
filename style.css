@@ -96,21 +96,17 @@ h2 {
   padding-right: 0;
   text-align: center;
   transform-origin: 50% 50%;
-
-  transition: 0.5s;
 }
 .socials ul:hover {
-  /*transform: scale(1.2);*/
-
-  transition: 0.5s;
+  /*transform: scale(2);*/
 }
 
 .socials ul a {
-  fill: white;
+  fill: rgba(255, 255, 255);
   transition: 0.8s;
 }
 .socials ul a:hover {
-  fill: #0c0cff;
+  fill: rgba(12, 12, 255);
   transition: 0.8s;
 }
 
