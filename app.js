@@ -1,11 +1,15 @@
 
 
 (function() {
-
-
-  
   var canvas, ctx, circ, nodes, mouse, SENSITIVITY, SIBLINGS_LIMIT, DENSITY, NODES_QTY, ANCHOR_LENGTH, MOUSE_RADIUS;
   var rgb1, rgb2, rgb3;
+
+  //rgb(0,0,216)
+  //rgb(255, 0, 0)
+  //rgb(12, 12, 255)
+  rgb1 = 12;
+  rgb2 = 12;
+  rgb3 = 255;
 
   // how close next node must be to activate connection (in px)
   // shorter distance == better connection (line width)
@@ -52,13 +56,6 @@
     this.siblings = [];
     this.brightness = 0;
   }
-
-  //rgb(0,0,216)
-  //rgb(255, 0, 0)
-  //rgb(12, 12, 255)
-  rgb1 = 255;
-  rgb2 = 12;
-  rgb3 = 12;
 
   Node.prototype.drawNode = function() {
     var color = "rgba("+rgb1 + ", " +rgb2 + ", " +rgb3 + ", " + this.brightness + ")";
