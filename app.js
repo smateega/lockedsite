@@ -1,5 +1,3 @@
-
-
 (function() {
   var canvas, ctx, circ, nodes, mouse, SENSITIVITY, SIBLINGS_LIMIT, DENSITY, NODES_QTY, ANCHOR_LENGTH, MOUSE_RADIUS;
   var rgb1, rgb2, rgb3;
@@ -7,9 +5,9 @@
   //rgb(0,0,216)
   //rgb(255, 0, 0)
   //rgb(12, 12, 255)
-  rgb1 = 12;
+  rgb1 = 255;
   rgb2 = 12;
-  rgb3 = 255;
+  rgb3 = 12;
 
   // how close next node must be to activate connection (in px)
   // shorter distance == better connection (line width)
@@ -199,3 +197,10 @@
   
 })();
 
+const contact = document.querySelector('.contact');
+const socialmedia = document.querySelector('.media');
+
+contact.addEventListener('click', () => {
+  contact.classList.toggle('active');
+  socialmedia.classList.toggle('active');
+})

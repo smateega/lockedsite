@@ -44,88 +44,83 @@ h1 {
 /*CONTACT*/
 .contact {
   z-index: 1;
-  bottom: 0em;
-  left: 1em;
+  bottom: 1em;
+  padding: 0;
   
-  position: absolute;
   color: white;
   transform-origin: 50% 50%;
   transition: 0.5s;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+  cursor: pointer;
 }
-.contact:hover {
-  transform: scale();
-  transition: 0.5s;
-}
-
 .contact a {
   color: inherit;
   transition: 0.8s;
 }
 .contact a:hover {
   transition: 0.8s;
-  color: #0c0cff;
+  color: red;
 }
 h2 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.4em;
   text-align: center;
   color: white;
 }
-
-/*SOCIALS*/
-.socials {
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-  width: 1.8em;
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
+.contact.active {
+  bottom: 0em;
 }
 
-.socials ul {
-  text-decoration: none;
+/*SOCIALS*/ 
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-  transform-origin: 50% 50%;
 }
-.socials ul:hover {
-  /*transform: scale(2);*/
+.media {
+  position: absolute;
+  bottom: 1em;
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: 1.5s;
+  
 }
-
-.socials ul a {
-  fill: rgba(255, 255, 255);
-  transition: 0.8s;
+.media.active {
+  bottom: 2.5em;
+  opacity: 1;
 }
-.socials ul a:hover {
-  fill: rgba(12, 12, 255);
-  transition: 0.8s;
+li {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  font-size: 25px;
+  padding: 0 10px;
+  transition: .5s;
+  color: white;
 }
-
+li:hover {
+  color: red;
+  transition: .5s;
+}
 
 /*DESKTOP SITE*/
 @media only screen and (min-width: 800px) {
-  .socials {
+  .linkedin {
     bottom: 2em;
     right: 2em;
+  }
+  .email {
+    bottom: 2em;
+    left: 2em;
   }
 
   h1 {
     letter-spacing: 8px;
-  }
-
-  .contact {
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%);
   }
 }
