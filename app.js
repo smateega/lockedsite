@@ -2,30 +2,18 @@
   var canvas, ctx, circ, nodes, mouse, SENSITIVITY, SIBLINGS_LIMIT, DENSITY, NODES_QTY, ANCHOR_LENGTH, MOUSE_RADIUS;
   var rgb1, rgb2, rgb3;
 
-  //rgb(0,0,216)
   //rgb(255, 0, 0)
+  //rgb(0,0,216)
   //rgb(12, 12, 255)
   rgb1 = 255;
   rgb2 = 12;
   rgb3 = 12;
 
-  // how close next node must be to activate connection (in px)
-  // shorter distance == better connection (line width)
   SENSITIVITY = 100;
-
-  // more siblings == bigger node
   SIBLINGS_LIMIT = 8;
-
-  // default node margin
   DENSITY = 60;
-
-  // total number of nodes used (incremented after creation)
   NODES_QTY = 0;
-
-  // avoid nodes spreading
   ANCHOR_LENGTH = 20;
-
-  // highlight radius
   MOUSE_RADIUS = 200;
 
   circ = 2 * Math.PI;
@@ -192,13 +180,11 @@
 
   initHandlers();
   initNodes();
-  redrawScene();
-
-  
+  redrawScene(); 
 })();
 
 const contact = document.querySelector('.contact');
-const socialmedia = document.querySelector('.media');
+const socialmedia = document.querySelector('.socialmedia');
 
 contact.addEventListener('click', () => {
   contact.classList.toggle('active');

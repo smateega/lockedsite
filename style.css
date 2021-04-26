@@ -1,12 +1,10 @@
-
 html,
 body {
   margin: 0;
+  padding: 0;
   background-color: black;
   overflow: hidden;
   font-family: 'Josefin Sans', sans-serif;
-  padding: 0;
-  margin: 0;
 }
 
 /*NODE CANVAS*/
@@ -21,7 +19,7 @@ canvas {
 }
 
 /*SPENCER MATEEGA*/
-.content {
+.hero {
   z-index: 1;
   padding: 1em;
   position: absolute;
@@ -33,7 +31,6 @@ canvas {
   pointer-events: none;
 }
 h1 {
-  pointer-events: none;
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 7px;
@@ -44,24 +41,26 @@ h1 {
 /*CONTACT*/
 .contact {
   z-index: 1;
-  bottom: 1em;
   padding: 0;
-  
-  color: white;
-  transform-origin: 50% 50%;
-  transition: 0.5s;
   position: absolute;
+  bottom: 1em;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%);
+  transform-origin: 50% 50%;
+  color: white;
   cursor: pointer;
+  transition: 0.5s;
+}
+.contact.active {
+  bottom: 0em;
 }
 .contact a {
   color: inherit;
-  transition: 0.8s;
+  transition: 1.5s;
 }
 .contact a:hover {
-  transition: 0.8s;
+  transition: 1.5s;
   color: red;
 }
 h2 {
@@ -72,9 +71,6 @@ h2 {
   text-align: center;
   color: white;
 }
-.contact.active {
-  bottom: 0em;
-}
 
 /*SOCIALS*/ 
 ul {
@@ -82,45 +78,35 @@ ul {
   margin: 0;
   padding: 0;
 }
-.media {
+.socialmedia {
   position: absolute;
-  bottom: 1em;
-  opacity: 0;
+  bottom: 1.5em;
   left: 50%;
   transform: translate(-50%, 0%);
-  transition: 1.5s;
-  
+  opacity: 0;
+  transition: 0.8s;
 }
-.media.active {
+.socialmedia.active {
   bottom: 2.5em;
   opacity: 1;
 }
 li {
   list-style: none;
-  margin: 0;
   display: inline-block;
-  font-size: 25px;
+  margin: 0;
   padding: 0 10px;
-  transition: .5s;
+  font-size: 25px;
   color: white;
+  transition: 1s;
 }
 li:hover {
   color: red;
-  transition: .5s;
+  transition: 1s;
 }
 
 /*DESKTOP SITE*/
 @media only screen and (min-width: 800px) {
-  .linkedin {
-    bottom: 2em;
-    right: 2em;
-  }
-  .email {
-    bottom: 2em;
-    left: 2em;
-  }
-
   h1 {
-    letter-spacing: 8px;
+    letter-spacing: 9px;
   }
 }
