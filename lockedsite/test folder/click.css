@@ -1,0 +1,32 @@
+html,
+body {
+  overflow: hidden;
+  background: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.media {
+  position: absolute;
+  bottom: 0em;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+li {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  font-size: 25px;
+  padding: 0 10px;
+  transition: .5s;
+  color: white;
+}
+li:hover {
+  color: blue;
+  transition: .5s;
+}
+
+
+

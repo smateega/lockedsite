@@ -1,0 +1,130 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+  font-family: 'Inter','Josefin Sans',sans-serif;
+}
+
+/*NODE CANVAS*/
+canvas {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+/*SPENCER MATEEGA*/
+.hero {
+  z-index: 1;
+  padding: 1em;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  pointer-events: none;
+}
+
+/*CONTACT*/
+.contact {
+  z-index: 1;
+  padding: 0;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+  transform-origin: 50% 50%;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact.active {
+  bottom: 0em;
+}
+.contact a {
+  color: inherit;
+  transition: 1.5s;
+}
+.contact a:hover {
+  transition: 1.5s;
+  color: red;
+}
+
+/*SOCIALS*/ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.socialmedia {
+  position: absolute;
+  bottom: 1.5em;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  transition: 0.8s;
+}
+.socialmedia.active {
+  bottom: 2.5em;
+  opacity: 1;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0 4px;
+  font-size: 25px;
+  color: white;
+  transition: 1s;
+}
+li:hover {
+  color: red;
+  transition: 1s;
+}
+
+/*DESKTOP SITE*/
+@media only screen and (min-width: 800px) {
+  .socialIcons {
+    bottom: 5px;
+  }
+}
+
+/* SOCIAL ICONS */
+.socialIcons {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 1;
+  transition: 0.8s;
+}
+
+/* FONTS */
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  /* letter-spacing: 7px; */
+  line-height: 1em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+}
+h3 {
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+}
