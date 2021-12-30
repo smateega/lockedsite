@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-color: black;
   overflow: hidden;
-  font-family: 'Josefin Sans', 'Inter', sans-serif;
+  font-family: 'Inter','Josefin Sans',sans-serif;
 }
 
 /*NODE CANVAS*/
@@ -29,13 +29,6 @@ canvas {
   transform: translate(-50%, -50%);
   color: white;
   pointer-events: none;
-}
-h1 {
-  font-size: 1.5em;
-  font-weight: 300;
-  letter-spacing: 7px;
-  line-height: 1.4em;
-  text-align: center;
 }
 
 /*CONTACT*/
@@ -62,22 +55,6 @@ h1 {
 .contact a:hover {
   transition: 1.5s;
   color: red;
-}
-h2 {
-  font-size: 1.2em;
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 1.4em;
-  text-align: center;
-  color: white;
-}
-h3 {
-  font-size: 1em;
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 1.4em;
-  text-align: center;
-  color: white;
 }
 
 /*SOCIALS*/ 
@@ -117,8 +94,11 @@ li:hover {
   h1 {
     letter-spacing: 9px;
   }
+  .socialIcons {
+    position: absolute;
+    top: 35em;
+  }
 }
-
 
 /* SOCIAL ICONS */
 .socialIcons {
@@ -128,5 +108,29 @@ li:hover {
   transform: translate(-50%, 0%);
   opacity: 1;
   transition: 0.8s;
+}
 
+/* FONTS */
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  /* letter-spacing: 7px; */
+  line-height: 1.1em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-align: center;
+  color: white;
+}
+h3 {
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-align: center;
+  color: white;
 }
