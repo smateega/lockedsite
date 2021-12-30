@@ -79,7 +79,7 @@ li {
   list-style: none;
   display: inline-block;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 4px;
   font-size: 25px;
   color: white;
   transition: 1s;
@@ -91,19 +91,15 @@ li:hover {
 
 /*DESKTOP SITE*/
 @media only screen and (min-width: 800px) {
-  h1 {
-    letter-spacing: 9px;
-  }
   .socialIcons {
-    position: absolute;
-    top: 35em;
+    bottom: 5px;
   }
 }
 
 /* SOCIAL ICONS */
 .socialIcons {
   position: absolute;
-  top: 25em;
+  bottom: 2em;
   left: 50%;
   transform: translate(-50%, 0%);
   opacity: 1;
@@ -112,25 +108,23 @@ li:hover {
 
 /* FONTS */
 h1 {
-  font-size: 2em;
-  font-weight: 800;
+  font-size: 1.8em;
+  font-weight: 700;
   /* letter-spacing: 7px; */
-  line-height: 1.1em;
+  line-height: 1em;
   text-align: center;
 }
 h2 {
   font-size: 1.2em;
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 1.4em;
+  font-weight: 400;
+  line-height: 1em;
   text-align: center;
   color: white;
 }
 h3 {
-  font-size: 1em;
-  font-weight: 200;
-  letter-spacing: 1px;
-  line-height: 1.4em;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1em;
   text-align: center;
   color: white;
 }
