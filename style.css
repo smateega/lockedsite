@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-color: black;
   overflow: hidden;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', 'Inter', sans-serif;
 }
 
 /*NODE CANVAS*/
@@ -64,6 +64,14 @@ h1 {
   color: red;
 }
 h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  text-align: center;
+  color: white;
+}
+h3 {
   font-size: 1em;
   font-weight: 300;
   letter-spacing: 1px;
@@ -109,4 +117,16 @@ li:hover {
   h1 {
     letter-spacing: 9px;
   }
+}
+
+
+/* SOCIAL ICONS */
+.socialIcons {
+  position: absolute;
+  top: 25em;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 1;
+  transition: 0.8s;
+
 }
