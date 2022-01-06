@@ -7,10 +7,10 @@ body {
 .Hero {
   position: relative;
   margin: 0 auto;
-  top: 20px;
+  top: 0px;
   width: 80%;
   height: 100vh;
-  /* background: red; */
+  margin-bottom: 20px;
 }
 
 
@@ -18,7 +18,7 @@ body {
 .title-section {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  margin-bottom: -5px;
 }
 
 .Hero h1 { 
@@ -38,8 +38,8 @@ body {
 }
 
 #laptop {
-  width: 280px;
-  padding-top: 20px;
+  width: 260px;
+  padding-top: 0px;
   padding-bottom: 10px;
   margin-left: 50px;
   margin-right: 50px;
