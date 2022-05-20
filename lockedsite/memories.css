@@ -1,0 +1,47 @@
+html,
+body {
+  background: black;
+  font-family: 'Inter','Josefin Sans',sans-serif;
+}
+
+.title {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: red; */
+}
+
+.images {
+  /* background-color: blue; */
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+h1 {
+  color:white;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+/*DESKTOP SITE*/
+@media only screen and (min-width: 600px) {
+  .title {
+    width: 400px;
+  }
+  
+  .images {
+    /* background-color: red; */
+    width: 400px;
+  }
+
+  
+}
